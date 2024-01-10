@@ -1,0 +1,490 @@
+
+
+.hamburger {
+    display: none;
+    
+  }
+  
+  .hamburger input {
+    display: none;
+  }
+  
+  .hamburger svg {
+    /* The size of the SVG defines the overall size */
+    height: 3em;
+    /* Define the transition for transforming the SVG */
+    transition: transform 600ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  
+  .line {
+    fill: none;
+    stroke: white;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke-width: 3;
+    /* Define the transition for transforming the Stroke */
+    transition: stroke-dasharray 600ms cubic-bezier(0.4, 0, 0.2, 1),
+                stroke-dashoffset 600ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  
+  .line-top-bottom {
+    stroke-dasharray: 12 63;
+  }
+  
+  .hamburger input:checked + svg {
+    transform: rotate(-45deg);
+  }
+  
+  .hamburger input:checked + svg .line-top-bottom {
+    stroke-dasharray: 20 300;
+    stroke-dashoffset: -32.42;
+  }
+  
+
+
+
+h1{
+  font-size: 6rem;
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family:  'Jura', sans-serif;;
+    
+    /* background: rgb(49,139,189);
+    background: linear-gradient(152deg, rgba(49,139,189,1) 7%, rgba(50,151,175,1) 18%, rgba(43,53,64,1) 87%); */
+}
+
+
+
+/* CAMBIOS RECIENTES. LEER. */
+/* CAMBIE EL COLOR ORIGINAL DEL BACKGROUND, PONIENDOLE LA CLASE "GRADIENT" AL BODY, LOS ESTILOS DE ESA CLASE ESTAN ABAJO DE ESTE TEXTO.  */
+/* EN CASO DE CAMBIARLO. ELIMIAR LA CLASE DEL BODY, Y SACAR LOS COMENTARIOS A LOS BACKGROUNDS ARRIBA DE ESTE TEXTO */
+
+/* #7d0058 */
+.gradient {
+	width: 100vw;
+	height: 100vh;
+  /* background: linear-gradient(334deg, rgba(49,139,189,1) , rgba(50,151,175,1) , rgba(43,53,64,1)); */
+	/* background: linear-gradient(334deg, #6b97f7, #7525e2, #833057); */
+  /* background: linear-gradient(334deg, #31375d, #5c457b, #16004c); */
+  background: linear-gradient(334deg, #5558ae, #232655, #978efb);
+ 
+	background-size: 180% 180%;
+	animation: gradient-animation 6s ease infinite;
+}
+
+@keyframes gradient-animation {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+
+
+
+
+
+/* Header */
+nav {
+    width: 100%;
+    z-index: 2;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: center;
+}
+
+nav a{
+    margin: 2rem;
+    padding-bottom: 0;
+    font-size: 25px;
+    color:#ccdced ;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-decoration: none;
+}
+
+.presentacion{
+    text-align: center;
+    color: #ccdced;
+    margin-top: 15rem;
+    padding: 1rem;
+    
+    
+}
+
+.presentacion h4{
+    font-size: 30px;
+}
+header{
+    min-height: 60rem;
+}
+
+nav a {
+    position: relative;
+    color: #ccdced;
+    text-decoration: none;
+  }
+  
+  nav a:hover {
+    color: #2b3540;
+    transition: 0.6s;
+  }
+  
+ nav a::before {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 3px;
+    bottom: 0;
+    left: 0;
+    background-color: #2b3540;
+    transform: scaleX(0);
+    transform-origin: top left;
+    transition: transform 0.8s ease;
+    
+  }
+  
+  nav a:hover::before {
+    transform: scaleX(1);
+  }
+
+
+
+
+  /* About Seccion */
+
+  .main{
+    text-align: center;
+
+  }
+
+
+.About-section{
+min-height: 55rem;
+}
+
+.main-div{
+    width: 700px;
+    margin: 0 auto;
+
+}
+
+
+
+
+
+section{
+    
+  margin-bottom: 50px;
+    position: relative;
+}
+
+.main h2{
+    
+    color: #ccdced;
+    text-align: center;
+    font-family: 'Avenir Next','Segoe ui',Ubuntu,sans-serif;
+    font-size: 40px;
+    margin: 0;
+    padding-top: 30px;
+    margin-bottom: 30px;
+}
+
+.main h3{
+    
+    color: #ccdced;
+    text-align: center;
+    font-family: 'Avenir Next','Segoe ui',Ubuntu,sans-serif;
+    font-size: 30px;
+    margin: 0;
+    padding-top: 30px;
+    margin-bottom: 30px;
+}
+
+
+ p{
+    font-size: 1.3rem;
+    line-height: 2rem;
+    /* color: #292E49; */
+color: #bdc3c7;
+}
+
+
+/* knowledge Section*/
+.knowledge-section{
+  min-height: 55rem;
+}
+
+.card {
+    width: 190px;
+    height: 200px;
+    background: rgb(40,40,55);
+    background: linear-gradient(344deg, rgba(40,40,55,1) 0%, rgba(16,16,18,1) 50%);
+    box-shadow: 4px 6px 14px #00000036;
+    border-radius: 3px;
+    color: #F9F9F9;
+    padding: 16px;
+    transition: all .3s;
+    margin-top: 4rem;
+    border-radius: 25px;
+   }
+   
+   .card:hover {
+    margin-top: 3rem;
+   }
+   
+   .div-nose{
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+   }
+
+
+
+   /* MEDIA QUERYS */
+   @media (max-width: 768px) {
+    .main-div {
+        width: 100%;
+        padding-left: 20px;
+        padding-right: 20px;
+        box-sizing: border-box;
+    }
+
+    .div-nose{
+        display: flex;
+        flex-direction: column;
+        
+    }
+    .hamburger{
+        display: flex;
+        justify-content: flex-end;
+        cursor: pointer;
+    }
+    .navegacion{
+        display: none;
+    }
+    .mostrar{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-top: 1rem;  
+      
+  }
+  h1{
+    font-size: 4rem;
+  }
+  .presentacion h4{
+    font-size: 1.5rem;
+}
+.social-buttons{
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+}
+
+
+.ultimo-div{
+  margin-top: 3rem;
+}
+  
+
+/* Contact Section */
+
+.contact-section{
+
+}
+
+footer{
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  padding: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+}
+
+/* .footer-div{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+} */
+
+.footer-button{
+  display: flex;
+  justify-content: flex-end ;
+  align-items: center;
+  padding: 2rem;
+
+}
+
+
+
+
+/* SOCIAL MEDIA BUTTONS */
+.social-buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 15px 10px;
+  
+}
+
+.social-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin: 0 10px;
+  background-color: #fff;
+  box-shadow: 0px 0px 4px #00000027;
+  transition: 0.3s;
+}
+
+.social-button:hover {
+  background-color: #f2f2f2;
+  box-shadow: 0px 0px 6px 3px #00000027;
+}
+
+.social-buttons svg {
+  transition: 0.3s;
+  height: 20px;
+}
+
+.facebook {
+  background-color: #3b5998;
+}
+
+.facebook svg {
+  fill: #f2f2f2;
+}
+
+.facebook:hover svg {
+  fill: #3b5998;
+}
+
+.github {
+  background-color: #333;
+}
+
+.github svg {
+  width: 25px;
+  height: 25px;
+  fill: #f2f2f2;
+}
+
+.github:hover svg {
+  fill: #333;
+}
+
+.linkedin {
+  background-color: #0077b5;
+}
+
+.linkedin svg {
+  fill: #f2f2f2;
+}
+
+.linkedin:hover svg {
+  fill: #0077b5;
+}
+
+.instagram {
+  background-color: #c13584;
+}
+
+.instagram svg {
+  fill: #f2f2f2;
+}
+
+.instagram:hover svg {
+  fill: #c13584;
+}
+
+
+
+
+
+
+/* BACK TO TOP BUTTON */
+
+
+.Back-to-top {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: rgb(20, 20, 20);
+  border: none;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+  cursor: pointer;
+  transition-duration: 0.3s;
+  overflow: hidden;
+  position: relative;
+}
+
+.svgIcon {
+  width: 12px;
+  transition-duration: 0.3s;
+}
+
+.svgIcon path {
+  fill: white;
+}
+
+.Back-to-top:hover {
+  width: 140px;
+  border-radius: 50px;
+  transition-duration: 0.3s;
+  background-color: rgb(20, 20, 20);
+  align-items: center;
+}
+
+.Back-to-top:hover .svgIcon {
+  /* width: 20px; */
+  transition-duration: 0.3s;
+  transform: translateY(-200%);
+}
+
+.Back-to-top::before {
+  position: absolute;
+  bottom: -20px;
+  content: "Back to Top";
+  color: white;
+  /* transition-duration: .3s; */
+  font-size: 0px;
+}
+
+.Back-to-top:hover::before {
+  font-size: 13px;
+  opacity: 1;
+  bottom: unset;
+  /* transform: translateY(-30px); */
+  transition-duration: 0.3s;
+}
