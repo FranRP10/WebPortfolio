@@ -78,6 +78,7 @@ body{
 	/* background: linear-gradient(334deg, #6b97f7, #7525e2, #833057); */
   /* background: linear-gradient(334deg, #31375d, #5c457b, #16004c); */
   background: linear-gradient(334deg, #5558ae, #232655, #978efb);
+  /* background-color: #1e243b; */
  
 	background-size: 180% 180%;
 	animation: gradient-animation 6s ease infinite;
@@ -278,14 +279,25 @@ color: #bdc3c7;
         cursor: pointer;
     }
     .navegacion{
-        display: none;
+      display: none;
+        /* display: flex;
+        flex-direction: column;
+        opacity: 0; 
+        visibility: hidden;
+        transition: opacity 0.5s ease, visibility 0.5s ease; */
+        
     }
     .mostrar{
       display: flex;
       flex-direction: column;
       align-items: center;
       margin-top: 1rem;  
+      /* opacity: 1; 
+      visibility: visible; */
+      
+
   }
+ 
   h1{
     font-size: 4rem;
   }
@@ -300,6 +312,7 @@ color: #bdc3c7;
 .presentacion{
   margin-top: 7rem;
 }
+
 
 }
 

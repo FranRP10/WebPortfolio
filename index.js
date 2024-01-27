@@ -37,11 +37,7 @@ document.addEventListener('DOMContentLoaded', function(){
     distance: '-400px'
   });
 
-  sr.reveal('.navegacion', {
-    duration: 2300,
-    origin: 'bottom',
-    distance: '-200px'
-  });
+
 
   sr.reveal('.presentacion', {
     duration: 3000,
