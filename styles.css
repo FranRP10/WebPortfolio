@@ -313,8 +313,14 @@ color: #bdc3c7;
   margin-top: 7rem;
 }
 
+.knowledge-section{
+  margin-top: 10rem;
+}
+
 
 }
+
+
 
 
 .ultimo-div{
@@ -324,9 +330,7 @@ color: #bdc3c7;
 
 /* Contact Section */
 
-.contact-section{
 
-}
 
 footer{
   width: 100%;
